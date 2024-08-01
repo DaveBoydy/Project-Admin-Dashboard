@@ -19,16 +19,50 @@
   grid-area: header;
   padding: 1rem;
   background-color: white;
+  display: grid;
+  grid-template: 1.2fr 2fr / 2fr 1.2fr;
 }
 
 #content {
   grid-area: main;
   padding: 1rem;
   background-color: antiquewhite;
+  display: grid;
+  grid-template:
+    "projects announcements" 1fr
+    "projects trending" 1fr
+    / 2.5fr 1fr;
 }
 
 #sidebar {
   grid-area: sidebar;
   padding: 1rem;
   background-color: aqua;
+  display: grid;
+  grid-template-rows: 1fr 4fr 6.5fr;
+}
+
+.main-projects {
+  grid-area: projects;
+}
+
+.main-announcements {
+  grid-area: announcements;
+}
+
+.main-trending {
+  grid-area: trending;
+}
+
+header > div {
+  border: 1px dashed;
+}
+
+main > section {
+  border: 1px dashed;
+}
+
+aside > div,
+aside > nav {
+  border: 1px dashed;
 }
