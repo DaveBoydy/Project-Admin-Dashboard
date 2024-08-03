@@ -1,3 +1,9 @@
+:root {
+  --primary: #71717a; /* sonic silver, 500 */
+  --secondary: #fff;
+  --tertiary: #f3f3f2; /*  sonic silver variant, 50 */
+}
+
 *,
 *::before,
 *::after {
@@ -18,7 +24,6 @@
 #intro {
   grid-area: header;
   padding: 1rem;
-  background-color: white;
   display: grid;
   grid-template: 1.2fr 2fr / 2fr 1.2fr;
 }
@@ -26,7 +31,7 @@
 #content {
   grid-area: main;
   padding: 1rem;
-  background-color: antiquewhite;
+  background-color: var(--tertiary);
   display: grid;
   grid-template:
     "projects announcements" 1fr
@@ -37,7 +42,8 @@
 #sidebar {
   grid-area: sidebar;
   padding: 1rem;
-  background-color: aqua;
+  background-color: var(--primary);
+  color: #fff;
   display: grid;
   grid-template-rows: 1fr 4fr 6.5fr;
 }
@@ -52,6 +58,22 @@
 
 .main-trending {
   grid-area: trending;
+}
+
+#sidebar li,
+.logo {
+  display: flex;
+  align-items: end;
+  gap: 1rem;
+}
+
+#sidebar li,
+.main-projects li {
+  list-style-type: none;
+}
+
+#sidebar [src^="icons"] {
+  filter: brightness(0) invert(1);
 }
 
 header > div {
