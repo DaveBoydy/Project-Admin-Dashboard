@@ -321,3 +321,10 @@
     grid-column: 1/2;
   }
 }
+
+@media (max-width: 650px) {
+  #sidebar h1,
+  #sidebar h2 {
+    display: none;
+  }
+}
