@@ -1,3 +1,3 @@
 # Project-Admin-Dashboard
-The Odin Project's Admin Dashboard Assignment.
 
+## [Live Demo](https://daveboydy.github.io/Project-Admin-Dashboard/)
